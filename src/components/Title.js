@@ -1,14 +1,7 @@
 import React from "react";
 
 function Title({ children, id }) {
-    return (
-       <h1
-          id={id && id}
-          className="text-2xl font-dosis font-bold mb-10">       
-          {children}
-       </h1>
+  return <h1 className="text-5xl font-dosis font-bold mb-10">Timeline ⏳</h1>;
+}
 
-    )
- }
- 
- export default Title;
+export default Title;

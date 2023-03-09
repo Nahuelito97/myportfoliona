@@ -12,7 +12,10 @@ export default function Stack() {
         background: '#FEFEFE',      
       }}
     >
-      <h1 className="text-5xl font-dosis font-bold mb-10">🚀 Stack I Use for Coding</h1>
+      <h1 className="text-5xl font-dosis font-bold mb-10">Stack I Use for Coding 💻</h1>
+      <p className="mt-10 mb-10 w-11/12 md:max-w-xl text-center inline-block text-xl md:text-2xl font-dosis ">
+        {content.stack.desc}.
+      </p>
       <div>
         <div className="flex flex-wrap justify-center">
           {content.stack.tech.map((tech, index) => (
@@ -22,14 +25,12 @@ export default function Stack() {
                 index % 2 !== 0 ? 'animate-bounce' : 'animate-bounceFirst'
               }`}
             >
-              <LazyLoadImage effect="blur" src={tech.img} alt={tech.alt} />
+              <LazyLoadImage effect="blur" src={tech.img} alt={tech.alt} title={tech.title} />
             </span>
           ))}
         </div>
       </div>
-      <p className="mt-10 mb-10 w-11/12 md:max-w-xl text-center inline-block text-xl md:text-2xl font-dosis ">
-        {content.stack.desc}.
-      </p>
+     
     </div>
   );
 }

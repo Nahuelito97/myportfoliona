@@ -2,29 +2,24 @@ import React from "react";
 
 function TimelineItem({ year, title, duration, details }) {
   return (
-    <ol className="flex flex-col md:flex-row relative border-l border-stone-200 dark:border-stone-700">
-      <li className="mb-10 ml-4">
-        <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-stone-900 dark:bg-stone-700" />
-        <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
-          <span
-            className="p-2 cursor-pointer inline-flex items-center
-        rounded-full bg-gray-700 mx-1.5 text-xl hover:text-gray-100 hover:bg-teal-500
-        duration-300 "
-          >
-            {year}
-          </span>
-          <h3 className="text-lg font-semibold text-stone-900 dark:text-white">
-            {title}
-          </h3>
-          <div className="my-1 text-sm font-normal leading-none text-stone-400 dark:text-stone-500">
-            {duration}
-          </div>
-        </p>
-        <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-9 px-2">
+      <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+          <h1 class="text-white text-xl font-medium py-2">{year}</h1>
+          <h1 class="text-white text-xl font-medium py-2">{title}</h1>
+          <p class="text-gray-100 sm:text-sm text-xs">
           {details}
-        </p>
-      </li>
-    </ol>
+          </p>
+        </div>
+      </div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">
+          1
+        </div>
+      </div>
+      <div class="col-span-4 w-full h-full"></div>
+    </div>
   );
 }
 export default TimelineItem;
