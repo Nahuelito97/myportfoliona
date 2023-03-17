@@ -43,9 +43,11 @@ export default function Header() {
           <h1
             className={`text-2xl md:text-4xl text-gray-400 transform ${
               animated ? 'translate-y-0' : styleTranslate
-            } ${transition(3000)} `}
+            } ${transition(2000)} `}
           >
+            <br />
             {content.header.text[2]}
+
             <Typical
               steps={content.header.typical}
               loop={Infinity}
@@ -55,10 +57,11 @@ export default function Header() {
           </h1>
 
           <ScrollLink to="mywork" smooth={true}>
+          <br />
             <button
               className={` animate-bounce bg-indigo-500 px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-indigo-300 transform  ${
                 animated ? 'translate-y-0' : styleTranslate
-              } ${transition(3500)}`}
+              } ${transition(2000)}`}
             >
               {content.header.btnText}
             </button>
