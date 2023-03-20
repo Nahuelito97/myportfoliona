@@ -19,6 +19,6 @@ export default [
     imgUrl: process.env.PUBLIC_URL + "/assets/terminal-website.jpg",
     stack: ["Python", "C++", "Robotics"],
     link: "#",
-    description: `I am familiar and work daily with HTML `,
+    description: `I am familiar and work daily with HTML`,
   },
 ];

@@ -1,5 +1,4 @@
 import React from "react";
-import portfolio from "../data/projects";
 import PortfolioItem from "./PortfolioItem";
 import content from "../content";
 import projects from "../data/projects";

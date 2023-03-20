@@ -1,5 +1,4 @@
 import React from "react";
-import portfolio from "../data/projects";
 
 function PortfolioItem({ title, imgUrl, stack, link, description, img }) {
   return (
