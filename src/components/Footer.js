@@ -8,7 +8,7 @@ export default function Footer() {
     <div
       className="py-5 text-center"
       style={{
-        background: "#091C29",
+        background: "#1d1836",
       }}
 	  id="footer"
     >

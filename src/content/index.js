@@ -1,6 +1,7 @@
 export default {
   nav: {
-    logo: "Nahuel",
+    logo: "Nahuel </>",
+    img: process.env.PUBLIC_URL + "/logo512.png",
     links: [
       { text: "Work", to: "mywork" },
       { text: "Contact", to: "footer" },
