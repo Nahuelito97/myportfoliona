@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/myportfoliona/static/css/main.48b7e406.css",
-    "main.js": "/myportfoliona/static/js/main.1350222b.js",
+    "main.css": "/myportfoliona/static/css/main.3a7e3aee.css",
+    "main.js": "/myportfoliona/static/js/main.5174984e.js",
     "static/js/787.c36d0e45.chunk.js": "/myportfoliona/static/js/787.c36d0e45.chunk.js",
     "static/media/tripguide.png": "/myportfoliona/static/media/tripguide.991986c795ea140ba063.png",
     "static/media/herobg.png": "/myportfoliona/static/media/herobg.ad33add2430e34307c33.png",
     "static/media/carrent.png": "/myportfoliona/static/media/carrent.6b1e855ede285c40b77f.png",
     "static/media/jobit.png": "/myportfoliona/static/media/jobit.755da7149642fd049273.png",
+    "static/media/nahuelgithub.png": "/myportfoliona/static/media/nahuelgithub.8ca9465789c09e4c662b.png",
+    "static/media/elprofe.png": "/myportfoliona/static/media/elprofe.45c24d921e5603f23885.png",
     "static/media/profile.png": "/myportfoliona/static/media/profile.43269ce853b878b713dc.png",
+    "static/media/webdev.png": "/myportfoliona/static/media/webdev.820a10e8cc164d8c58a8.png",
     "static/media/web.png": "/myportfoliona/static/media/web.c0cb2cc13791a26822d3.png",
     "static/media/backend.png": "/myportfoliona/static/media/backend.08c8d93b8142c41a9e63.png",
+    "static/media/swagger.png": "/myportfoliona/static/media/swagger.ceecef346fb5a1d8801c.png",
     "static/media/mobile.png": "/myportfoliona/static/media/mobile.15e7b89f1018dcdba6e7.png",
     "static/media/creator.png": "/myportfoliona/static/media/creator.f8923ce18390029928ac.png",
     "static/media/starbucks.png": "/myportfoliona/static/media/starbucks.c086db5b166ea2f14de1.png",
@@ -18,12 +22,12 @@
     "static/media/menu.svg": "/myportfoliona/static/media/menu.a14e08da817ed339d3849bc81037592d.svg",
     "index.html": "/myportfoliona/index.html",
     "static/media/threejs.svg": "/myportfoliona/static/media/threejs.a02bc572667de670fbfb2173c0331d05.svg",
-    "main.48b7e406.css.map": "/myportfoliona/static/css/main.48b7e406.css.map",
-    "main.1350222b.js.map": "/myportfoliona/static/js/main.1350222b.js.map",
+    "main.3a7e3aee.css.map": "/myportfoliona/static/css/main.3a7e3aee.css.map",
+    "main.5174984e.js.map": "/myportfoliona/static/js/main.5174984e.js.map",
     "787.c36d0e45.chunk.js.map": "/myportfoliona/static/js/787.c36d0e45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48b7e406.css",
-    "static/js/main.1350222b.js"
+    "static/css/main.3a7e3aee.css",
+    "static/js/main.5174984e.js"
   ]
 }
