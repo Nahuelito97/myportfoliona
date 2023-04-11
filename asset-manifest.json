@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myportfoliona/static/css/main.3a7e3aee.css",
-    "main.js": "/myportfoliona/static/js/main.5174984e.js",
+    "main.css": "/myportfoliona/static/css/main.e0e1a889.css",
+    "main.js": "/myportfoliona/static/js/main.377751ec.js",
     "static/js/787.c36d0e45.chunk.js": "/myportfoliona/static/js/787.c36d0e45.chunk.js",
     "static/media/tripguide.png": "/myportfoliona/static/media/tripguide.991986c795ea140ba063.png",
     "static/media/herobg.png": "/myportfoliona/static/media/herobg.ad33add2430e34307c33.png",
@@ -22,12 +22,12 @@
     "static/media/menu.svg": "/myportfoliona/static/media/menu.a14e08da817ed339d3849bc81037592d.svg",
     "index.html": "/myportfoliona/index.html",
     "static/media/threejs.svg": "/myportfoliona/static/media/threejs.a02bc572667de670fbfb2173c0331d05.svg",
-    "main.3a7e3aee.css.map": "/myportfoliona/static/css/main.3a7e3aee.css.map",
-    "main.5174984e.js.map": "/myportfoliona/static/js/main.5174984e.js.map",
+    "main.e0e1a889.css.map": "/myportfoliona/static/css/main.e0e1a889.css.map",
+    "main.377751ec.js.map": "/myportfoliona/static/js/main.377751ec.js.map",
     "787.c36d0e45.chunk.js.map": "/myportfoliona/static/js/787.c36d0e45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a7e3aee.css",
-    "static/js/main.5174984e.js"
+    "static/css/main.e0e1a889.css",
+    "static/js/main.377751ec.js"
   ]
 }
