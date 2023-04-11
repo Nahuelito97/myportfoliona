@@ -55,11 +55,7 @@ export default {
         alt: "java",
         title: "JAVA",
       },
-      {
-        img: process.env.PUBLIC_URL + "/assets/node.png",
-        alt: "node",
-        title: "NODE JS",
-      },
+      
       {
         img:
           process.env.PUBLIC_URL +

@@ -13,8 +13,7 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
 
   return (
-    <div className="font-dosis fixed top-0 w-screen z-40"
-    >
+    <div className="font-dosis fixed top-0 w-screen z-40">
       <div className="flex items-center w-10/12  mx-auto py-3">
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
           <ScrollLink
@@ -25,8 +24,11 @@ export default function Navigation() {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-            <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+            <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
+            <p
+              className="text-teal-500 mx-1.5 text-xl hover:text-gray-100
+                duration-300  text-[18px] font-bold cursor-pointer flex "
+            >
               {content.nav.logo}
               <span className="sm:block hidden"></span>
             </p>

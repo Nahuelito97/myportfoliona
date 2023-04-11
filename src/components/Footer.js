@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="rounded-[20px] py-5 px-12 min-h-[100px] flex justify-evenly items-center flex-col">
           <img src={logo} alt="logo" className="w-16 h-16 object-contain" />
           <br />
-          <h3 className="text-white text-[16px] text-center">
+          <h3 className="text-teal-500 hover:text-gray-100 text-[16px] text-center">
             Made with ❤️ by {content.nav.logo}
           </h3>
         </div>
