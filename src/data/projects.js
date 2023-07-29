@@ -15,10 +15,9 @@ export default [
 
   },
   {
-    title: "AI Nerf Gun",
-    imgUrl: process.env.PUBLIC_URL + "/assets/terminal-website.jpg",
+    title: "Eccomerce Project",
+    imgUrl: process.env.PUBLIC_URL + "/assets/project1.png",
     stack: ["Python", "C++", "Robotics"],
-    link: "#",
-    description: `I am familiar and work daily with HTML`,
-  },
+    link: "https://nahuelito97.github.io/",
+    description: `This website is under development, with constant changes. Develped with React.js framework.` },
 ];

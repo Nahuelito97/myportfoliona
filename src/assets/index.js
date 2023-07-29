@@ -33,7 +33,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import jobit from "./project1.png";
 import tripguide from "./tripguide.png";
 import elprofe from "./elprofe.png";
 

@@ -200,20 +200,16 @@ const projects = [
     source_code_link: "https://github.com/Nahuelito97/EL-Profe",
   },
   {
-    name: "Job IT",
+    name: "Ecomerce Project",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application, This website is under development, with constant changes. Develped with React.js framework.",
     tagsitos: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "bootstrap",
         color: "pink-text-gradient",
       },
     ],
