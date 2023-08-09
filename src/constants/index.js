@@ -214,7 +214,8 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Nahuelito97/ecomerce-react",
+    source_code_link_published: "https://nahuelito97.github.io/ecomerce-react/",
   },
   {
     name: "GitHub Profile",
