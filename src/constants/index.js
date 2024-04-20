@@ -197,6 +197,12 @@ const projects = [
       },
     ],
     image: elprofe,
+    demo: [
+      {
+        name: "Link Demo",
+        color: "pink-text-gradient",
+      },
+    ],
     source_code_link: "https://github.com/Nahuelito97/EL-Profe",
   },
   {
@@ -215,6 +221,12 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/Nahuelito97/ecomerce-react",
+    demo: [
+      {
+        name: "Link Demo",
+        color: "pink-text-gradient",
+      },
+    ],
     source_code_link_published: "https://nahuelito97.github.io/ecomerce-react/",
   },
   {
@@ -228,6 +240,12 @@ const projects = [
       }
     ],
     image: nahuelgithub,
+    demo: [
+      {
+        name: "Link Demo",
+        color: "pink-text-gradient",
+      },
+    ],
     source_code_link: "https://github.com/Nahuelito97",
   },
   

@@ -12,22 +12,24 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navigation />
-          <Header />
-        </div>
+    <>
+      <Navigation />
+      <div class="progress-wrap" id="scrollUp">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+      <Header />
+
+      <BrowserRouter>
         <About />
+        <Portfolio />
         <Timelines />
         <Stack />
-        <Portfolio />
         <Feedbacks />
-        <div className='relative z-0'>
-          <Footer />
-        </div>
-      </div>
-    </BrowserRouter>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 

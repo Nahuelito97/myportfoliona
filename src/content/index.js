@@ -1,6 +1,6 @@
 export default {
   nav: {
-    logo: "Nahuel Dev </>",
+    logo: "Nahu Dev </>",
     img: process.env.PUBLIC_URL + "/logo512.png",
     links: [
       { text: "Work", to: "mywork" },
@@ -55,7 +55,7 @@ export default {
         alt: "java",
         title: "JAVA",
       },
-      
+
       {
         img:
           process.env.PUBLIC_URL +

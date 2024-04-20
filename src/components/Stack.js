@@ -1,40 +1,69 @@
-import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import { motion } from "framer-motion";
-
-import { styles } from "../styles";
-import { fadeIn, textVariant } from "../utils/motion";
-
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import { useTheme } from '@mui/system';
 import content from '../content';
 
-export default function Stack() {
+
+const whiteLogos = [
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560628e8573c43893fe0ace_Sydney-white.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f4d520d0517ae8e8ddf13_Bern-white.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f46794c159024c1af6d44_Montreal-white.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e891fa22f89efd7477a_TerraLight.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560a09d1f6337b1dfed14ab_colorado-white.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f5caa77bf7d69fb78792e_Ankara-white.svg',
+];
+
+const darkLogos = [
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560628889c3bdf1129952dc_Sydney-black.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f4d4d8b829a89976a419c_Bern-black.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f467502f091ccb929529d_Montreal-black.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e911fa22f2203d7514c_TerraDark.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/6560a0990f3717787fd49245_colorado-black.svg',
+  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/655f5ca4e548b0deb1041c33_Ankara-black.svg',
+];
+
+const logoStyle = {
+  width: '90px',
+  height: '70px',
+  margin: '0 32px',
+  opacity: 0.7,
+  marginTop: '24px',
+};
+
+export default function LogoCollection() {
   return (
-    <div
-      className="min-h-screen flex items-center justify-center flex-col"      
-    >
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>development skills</p>
-        <h2 className={styles.sectionHeadText}>Stack I Use for Coding 💻</h2>
-      </motion.div>
-      <p className="mt-10 mb-10 w-11/12 md:max-w-xl text-center inline-block text-xl md:text-2xl font-dosis ">
+    <Box id="logoCollection" sx={{ py: 4 }}>
+      <Typography
+        component="p"
+        variant="h3"
+        align="center"
+        color="text.secondary"
+      >
+        Stack I Use for Coding 💻
+      </Typography>
+      <br />
+      <Typography
+        component="p"
+        variant="h5"
+        align="center"
+        color="text.secondary"
+      >
         {content.stack.desc}.
-      </p>
-      <div>
-        <div className="flex flex-wrap justify-center">
-          {content.stack.tech.map((tech, index) => (
-            <span
-              key={index}
-              className={` h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
-                index % 2 !== 0 ? 'animate-bounce' : 'animate-bounceFirst'
-              }`}
-            >
-              <LazyLoadImage effect="blur" src={tech.img} alt={tech.alt} title={tech.title} />
-            </span>
-          ))}
-        </div>
-      </div>
-     
-    </div>
+      </Typography>
+      <Grid container justifyContent="center">
+        {content.stack.tech.map((tech, index) => (
+          <Grid item key={index}>
+            <img
+              src={tech.img}
+              alt={`Fake company number ${index + 1}`}
+              title={tech.title}
+              style={logoStyle}
+            />
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   );
 }

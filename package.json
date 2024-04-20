@@ -4,10 +4,14 @@
   "private": true,
   "homepage": "https://Nahuelito97.github.io/myportfoliona",
   "dependencies": {
-    "@mui/material": "^5.11.15",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.3",
     "framer-motion": "^10.9.1",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
@@ -51,6 +55,6 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.2.4"
+    "jest": "^29.6.4"
   }
 }

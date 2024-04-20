@@ -1,85 +1,183 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Container from '@mui/material/Container';
 import { Link as ScrollLink } from "react-scroll";
 import content from "../content";
-import { Link } from "react-router-dom";
-
-import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo } from "../assets";
 
-export default function Navigation() {
+const logoStyle = {
+  width: '40px',
+  height: 'auto',
+  cursor: 'pointer',
+};
+
+function Navigation() {
+  const [setOpen] = React.useState(false);
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+
+  const scrollToSection = (sectionId) => {
+    const sectionElement = document.getElementById(sectionId);
+    const offset = 128;
+    if (sectionElement) {
+      const targetScroll = sectionElement.offsetTop - offset;
+      sectionElement.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo({
+        top: targetScroll,
+        behavior: 'smooth',
+      });
+      setOpen(false);
+    }
+  };
 
   return (
-    <div className="font-dosis fixed top-0 w-screen z-40">
-      <div className="flex items-center w-10/12  mx-auto py-3">
-        <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-          <ScrollLink
-            to="/"
-            className="flex items-center gap-2"
-            onClick={() => {
-              setActive("");
-              window.scrollTo(0, 0);
-            }}
-          >
-            <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
-            <p
-              className="text-teal-500 mx-1.5 text-xl hover:text-gray-100
-                duration-300  text-[18px] font-bold cursor-pointer flex "
-            >
-              {content.nav.logo}
-              <span className="sm:block hidden"></span>
-            </p>
-          </ScrollLink>
-
-          <ul className="list-none hidden sm:flex flex-row gap-10 text-white">
-            {navLinks.map((nav) => (
-              <li
-                key={nav.id}
-                className={`${
-                  active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
-                onClick={() => setActive(nav.title)}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-          </ul>
-          <div className="sm:hidden flex flex-1 justify-end items-center">
-            <img
-              src={toggle ? close : menu}
-              alt="menu"
-              className="w-[28px] h-[28px] object-contain"
-              onClick={() => setToggle(!toggle)}
-            />
-
-            <div
-              className={`${
-                !toggle ? "hidden" : "flex"
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-            >
-              <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4 text-white">
-                {navLinks.map((nav) => (
-                  <li
-                    key={nav.id}
-                    className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                      active === nav.title ? "text-white" : "text-secondary"
-                    }`}
+    <div>
+      <header class="tj-header-area header-absolute">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex flex-wrap align-items-center">
+              <Container maxWidth="lg">
+                <Toolbar
+                  variant="regular"
+                >
+                  <Box
+                    sx={{
+                      flexGrow: 1,
+                      display: 'flex',
+                      alignItems: 'center',
+                      ml: '-18px',
+                      px: 0,
+                    }}
+                  ><ScrollLink
+                    to="/"
+                    className="flex items-center gap-2"
                     onClick={() => {
-                      setToggle(!toggle);
-                      setActive(nav.title);
+                      setActive("");
+                      window.scrollTo(0, 0);
                     }}
                   >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                      <img src={logo} alt="logo of sitemark" className="w-12 h-12 object-contain" style={logoStyle}
+                      />
+                      <p
+                        className="text-teal-500 mx-1.5 text-xl hover:text-gray-100
+                duration-300  text-[18px] font-bold cursor-pointer flex "
+                      >
+                        {content.nav.logo}
+                        <span className="sm:block hidden"></span>
+                      </p>
+                    </ScrollLink>
+
+                  </Box>
+                  <div class="header-menu">
+                    <nav>
+                      <ul>
+                        {navLinks.map((nav) => (
+                          <li
+                            key={nav.id}
+                            className={`${active === nav.title ? "text-white" : "text-secondary"
+                              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                            onClick={() => setActive(nav.title)}
+                          >
+                            <a href={`#${nav.id}`}>{nav.title}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="header-button">
+                    <a href="#home" class="btn tj-btn-primary">Get Started!</a>
+                  </div>
+                  <div class="menu-bar d-lg-none">
+                    <button>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </Toolbar>
+              </Container>
+            </div >
+          </div >
+        </div >
+      </header >
+      <header class="tj-header-area header-2 header-sticky sticky-out">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 d-flex flex-wrap align-items-center">
+              <Container maxWidth="lg">
+                <Toolbar
+                  variant="regular"
+                >
+                  <Box
+                    sx={{
+                      flexGrow: 1,
+                      display: 'flex',
+                      alignItems: 'center',
+                      ml: '-18px',
+                      px: 0,
+                    }}
+                  ><ScrollLink
+                    to="/"
+                    className="flex items-center gap-2"
+                    onClick={() => {
+                      setActive("");
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                      <img src={logo} alt="logo of sitemark" className="w-12 h-12 object-contain" style={logoStyle}
+                      />
+                      <p
+                        className="text-teal-500 mx-1.5 text-xl hover:text-gray-100
+                duration-300  text-[18px] font-bold cursor-pointer flex "
+                      >
+                        {content.nav.logo}
+                        <span className="sm:block hidden"></span>
+                      </p>
+                    </ScrollLink>
+
+                  </Box>
+                  <div class="header-menu">
+                    <nav>
+                      <ul>
+                        {navLinks.map((nav) => (
+                          <li
+                            key={nav.id}
+                            className={`${active === nav.title ? "text-white" : "text-secondary"
+                              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                            onClick={() => setActive(nav.title)}
+                          >
+                            <a href={`#${nav.id}`}>{nav.title}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="header-button">
+                    <a href="#home" class="btn tj-btn-primary">Get Started!</a>
+                  </div>
+                  <div class="menu-bar d-lg-none">
+                    <button>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </Toolbar>
+              </Container>
+            </div >
+          </div >
+        </div >
+      </header>
+    </div >
   );
 }
+
+export default Navigation;

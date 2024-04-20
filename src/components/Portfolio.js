@@ -16,6 +16,7 @@ const ProjectCard = ({
   tagsitos,
   image,
   source_code_link,
+  demo,
   source_code_link_published,
 }) => {
   return (
@@ -63,15 +64,30 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
-          <div
-            onClick={() => window.open(source_code_link_published, "_blank")}
-            className="mt-7 flex justify-between items-center gap-1"
-          >
-            <img
-              src={webdev}
-              alt={`feedback_by-${name}`}
-              className="w-10 h-10 rounded-full object-cover"
-            />
+        </div>
+        <div className="mt-1">
+          <div className="mt-7 flex justify-between items-center gap-1">
+            <div className="flex-1 flex flex-col">
+              {demo.map((dem) => (
+                <p
+                  key={`${name}-${dem.name}`}
+                  className={`text-[14px] ${dem.color}`}
+                >
+                  #{dem.name}
+                </p>
+              ))}
+            </div>
+
+            <div
+              onClick={() => window.open(source_code_link_published, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={webdev}
+                alt={`feedback_by-${name}`}
+                className="w-10 h-10 rounded-full object-contain"
+              />
+            </div>
           </div>
         </div>
       </Tilt>
