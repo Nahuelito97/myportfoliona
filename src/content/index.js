@@ -39,44 +39,42 @@ export default {
     title: "Stack",
     tech: [
       {
-        img: process.env.PUBLIC_URL + "/assets/Laravel-Logo.wine.png",
-        alt: "laravel",
-        title: "LARAVEL",
+        img: process.env.PUBLIC_URL + "/img/Laravel-Logo.wine.png",
+        alt: "",
+        title: "Laravel",
+        percent: 90,
       },
       {
-        img: process.env.PUBLIC_URL + "/logo512.png",
-        alt: "react",
-        title: "REACT",
+        img: process.env.PUBLIC_URL + "/img/react.svg",
+        alt: "",
+        title: "React",
+        percent: 90,
       },
       {
         img:
           process.env.PUBLIC_URL +
-          "/assets/Java_(programming_language)-Logo.wine.png",
-        alt: "java",
-        title: "JAVA",
-      },
-
-      {
-        img:
-          process.env.PUBLIC_URL +
-          "/assets/Bootstrap_(front-end_framework)-Logo.wine.png",
-        alt: "laravel",
-        title: "BOOTSTRAP",
+          "/img/Bootstrap_(front-end_framework)-Logo.wine.png",
+        alt: "",
+        title: "Bootstrap",
+        percent: 90,
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/details-icon-javascript.png",
-        alt: "react",
-        title: "JAVA SCRIPT",
+        img: process.env.PUBLIC_URL + "/img/js.svg",
+        alt: "",
+        title: "Java Script",
+        percent: 90,
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/PHP-Logo.wine.png",
-        alt: "java",
+        img: process.env.PUBLIC_URL + "/img/PHP-Logo.wine.png",
+        alt: "",
         title: "PHP",
+        percent: 90,
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/mysql.png",
-        alt: "node",
-        title: "MY SQL",
+        img: process.env.PUBLIC_URL + "/img/mysql.png",
+        alt: "",
+        title: "My Sql",
+        percent: 90,
       },
     ],
   },

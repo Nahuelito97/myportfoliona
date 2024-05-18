@@ -9,7 +9,6 @@ import Feedbacks from './components/Feedbacks';
 import Portfolio from './components/Portfolio';
 import Timelines from './components/Timelines';
 import Footer from './components/Footer';
-
 function App() {
   return (
     <>

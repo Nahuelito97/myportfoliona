@@ -1,65 +1,106 @@
 import React from "react";
-import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
-
-import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hook";
-import { fadeIn, textVariant } from "../utils/motion";
-
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
-        <img
-          src={icon}
-          alt="web-development"
-          className="w-16 h-16 object-contain"
-        />
-
-        <h3 className="text-white text-[20px] font-bold text-center">
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+    <section class="resume-section" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <div class="section-header wow fadeInUp" data-wow-delay=".3s">
+              <h2 class="section-title">My Experience</h2>
+            </div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
+            <div class="resume-widget">
+              <div class="resume-widget">
+                <div class="resume-item wow fadeInLeft" data-wow-delay=".4s">
+                  <div class="time">
+                    2022 - Present
+                  </div>
+                  <h3 class="resume-title">Lead Developer</h3>
+                  <div class="institute">
+                    Blockdots, London
+                  </div>
+                </div>
+                <div class="resume-item wow fadeInLeft" data-wow-delay=".5s">
+                  <div class="time">
+                    2021 - 2022
+                  </div>
+                  <h3 class="resume-title">Full Stack Web Developer</h3>
+                  <div class="institute">
+                    Parsons, The New School
+                  </div>
+                </div>
+                <div class="resume-item wow fadeInLeft" data-wow-delay=".6s">
+                  <div class="time">
+                    2020 - 2021
+                  </div>
+                  <h3 class="resume-title">UI Designer</h3>
+                  <div class="institute">
+                    House of Life, Leeds
+                  </div>
+                </div>
+                <div class="resume-item wow fadeInLeft" data-wow-delay=".7s">
+                  <div class="time">
+                    2018 - 2020
+                  </div>
+                  <h3 class="resume-title">Junior Graphics Designer</h3>
+                  <div class="institute">
+                    Theme Junction, Bursa
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+          <div class="col-md-5">
+            <div class="section-header wow fadeInUp" data-wow-delay=".4s">
+              <h2 class="section-title">My Education</h2>
+            </div>
+
+            <div class="resume-widget">
+              <div class="resume-item wow fadeInRight" data-wow-delay=".5s">
+                <div class="time">
+                  2020 - 2023
+                </div>
+                <h3 class="resume-title">Programming course</h3>
+                <div class="institute">
+                  Harverd University
+                </div>
+              </div>
+              <div class="resume-item wow fadeInRight" data-wow-delay=".6s">
+                <div class="time">
+                  2016 - 2020
+                </div>
+                <h3 class="resume-title">Graphic design course</h3>
+                <div class="institute">
+                  University of Denmark
+                </div>
+              </div>
+              <div class="resume-item wow fadeInRight" data-wow-delay=".7s">
+                <div class="time">
+                  2012 - 2015
+                </div>
+                <h3 class="resume-title">Web design course</h3>
+                <div class="institute">
+                  University of California
+                </div>
+              </div>
+              <div class="resume-item wow fadeInRight" data-wow-delay=".8s">
+                <div class="time">
+                  2010 - 2011
+                </div>
+                <h3 class="resume-title">Design & Technology</h3>
+                <div class="institute">
+                  Parsons, The New School
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </section>
+
   );
 };
 
