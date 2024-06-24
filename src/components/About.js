@@ -1,5 +1,6 @@
 import React from "react";
 import { SectionWrapper } from "../hook";
+import { experiences } from "../constants";
 
 const About = () => {
   return (
@@ -11,45 +12,15 @@ const About = () => {
               <h2 class="section-title">My Experience</h2>
             </div>
 
-            <div class="resume-widget">
-              <div class="resume-widget">
-                <div class="resume-item wow fadeInLeft" data-wow-delay=".4s">
-                  <div class="time">
-                    2022 - Present
-                  </div>
-                  <h3 class="resume-title">Lead Developer</h3>
-                  <div class="institute">
-                    Blockdots, London
-                  </div>
+            <div className="resume-widget">
+              {experiences.map((experience, index) => (
+                <div className="resume-item wow fadeInLeft" data-wow-delay={`${0.4 + index * 0.1}s`} key={index}>
+                  <div className="time">{experience.date}</div>
+                  <h3 className="resume-title">{experience.title}</h3>
+                  <div className="institute">{experience.company_name}</div>
+
                 </div>
-                <div class="resume-item wow fadeInLeft" data-wow-delay=".5s">
-                  <div class="time">
-                    2021 - 2022
-                  </div>
-                  <h3 class="resume-title">Full Stack Web Developer</h3>
-                  <div class="institute">
-                    Parsons, The New School
-                  </div>
-                </div>
-                <div class="resume-item wow fadeInLeft" data-wow-delay=".6s">
-                  <div class="time">
-                    2020 - 2021
-                  </div>
-                  <h3 class="resume-title">UI Designer</h3>
-                  <div class="institute">
-                    House of Life, Leeds
-                  </div>
-                </div>
-                <div class="resume-item wow fadeInLeft" data-wow-delay=".7s">
-                  <div class="time">
-                    2018 - 2020
-                  </div>
-                  <h3 class="resume-title">Junior Graphics Designer</h3>
-                  <div class="institute">
-                    Theme Junction, Bursa
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 

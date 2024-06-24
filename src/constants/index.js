@@ -150,6 +150,10 @@ const experiences = [
   
 ];
 
+const education = [
+
+];
+
 const testimonials = [
   {
     testimonial:

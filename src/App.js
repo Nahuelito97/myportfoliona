@@ -23,7 +23,6 @@ function App() {
       <BrowserRouter>
         <About />
         <Portfolio />
-        <Timelines />
         <Stack />
         <Feedbacks />
         <Footer />
