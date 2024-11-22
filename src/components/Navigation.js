@@ -62,11 +62,10 @@ function Navigation() {
                       window.scrollTo(0, 0);
                     }}
                   >
-                      <img src={logo} alt="logo of sitemark" className="w-12 h-12 object-contain" style={logoStyle}
-                      />
-                      <p
-                        className="text-teal-500 mx-1.5 text-xl hover:text-gray-100
-                duration-300  text-[18px] font-bold cursor-pointer flex "
+                      {/*<img src={logo} alt="logo of sitemark" className="w-12 h-12 object-contain" style={logoStyle}
+                      />*/}
+                      <p className=" text-white mx-1.5 text-xl hover:text-teal-500
+                        duration-300  text-[18px] font-bold cursor-pointer flex "
                       >
                         {content.nav.logo}
                         <span className="sm:block hidden"></span>
