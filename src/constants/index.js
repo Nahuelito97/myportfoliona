@@ -1,33 +1,5 @@
 import {
-  mobile,
-  logo192,
-  webdev,
-  backend,
-  creator,
-  web,
-  swagger,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  nahuelgithub,
   elprofe,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
   laravel,
 } from "../assets";
 
@@ -46,79 +18,6 @@ export const navLinks = [
   },
 ];
 
-const services = [
-  {
-    title: "Web Developer",
-    icon: webdev,
-  },
-  {
-    title: "React Developer",
-    icon: logo192,
-  },
-  {
-    title: "Backend Developer",
-    icon: swagger,
-  },
-  {
-    title: "Laravel Developer",
-    icon: laravel
-  },
-];
-
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
 
 const experiences = [
   {
@@ -137,7 +36,7 @@ const experiences = [
   {
     title: "Full stack Developer",
     company_name: "Frelance",
-    icon: webdev,
+    icon: laravel,
     iconBg: "#383E56",
     date: "Jan 2020 - Present",
     points: [
@@ -148,10 +47,6 @@ const experiences = [
     ],
   },
   
-];
-
-const education = [
-
 ];
 
 const testimonials = [
@@ -223,7 +118,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: elprofe,
     source_code_link: "https://github.com/Nahuelito97/ecomerce-react",
     demo: [
       {
@@ -243,7 +138,7 @@ const projects = [
         color: "blue-text-gradient",
       }
     ],
-    image: nahuelgithub,
+    image: laravel,
     demo: [
       {
         name: "Link Demo",
@@ -257,7 +152,6 @@ const projects = [
 
 
 const icons = [
-  //{ name: "logo-facebook", link: "#" },
   { 
     name: "logo-twitter", 
     source_code_link: "https://twitter.com/nahuelitodev" },
@@ -272,4 +166,4 @@ const icons = [
     source_code_link: "https://www.instagram.com/nahuewagner/" },
 ];
 
-export { services, technologies, experiences, testimonials, projects, icons };
+export { experiences, testimonials, projects, icons };

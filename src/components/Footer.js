@@ -1,19 +1,11 @@
 import * as React from 'react';
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import IconButton from '@mui/material/IconButton';
-import InputLabel from '@mui/material/InputLabel';
-import Stack from '@mui/material/Stack';
-import FacebookIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/X';
-
 import "react-lazy-load-image-component/src/effects/blur.css";
 import content from "../content";
 import SocialLinks from './SocialLinks';
+import { IconButton, Tooltip, Typography, Link } from '@mui/material';
+
 
 function Copyright() {
   return (
@@ -52,43 +44,8 @@ export default function Footer() {
                 <div>
                   <Copyright sx={{ color: 'white' }} />
                 </div>
-                <Stack
-                  direction="row"
-                  spacing={1}
-                  useFlexGap
-                  sx={{
-                    justifyContent: 'left',
-                    color: 'white',
-                  }}
-                >
-                  <IconButton
-                    color="inherit"
-                    size="small"
-                    href="https://github.com/mui"
-                    aria-label="GitHub"
-                    sx={{ alignSelf: 'center', color: 'white' }}
-                  >
-                    <FacebookIcon />
-                  </IconButton>
-                  <IconButton
-                    color="inherit"
-                    size="small"
-                    href="https://x.com/MaterialUI"
-                    aria-label="X"
-                    sx={{ alignSelf: 'center', color: 'white' }}
-                  >
-                    <TwitterIcon />
-                  </IconButton>
-                  <IconButton
-                    color="inherit"
-                    size="small"
-                    href="https://www.linkedin.com/company/mui/"
-                    aria-label="LinkedIn"
-                    sx={{ alignSelf: 'center', color: 'white' }}
-                  >
-                    <LinkedInIcon />
-                  </IconButton>
-                </Stack>
+
+                <SocialLinks />
               </Box>
             </Container>
           </div>

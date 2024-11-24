@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from "react-router-dom";
+import { Tooltip } from '@mui/material';
 
 import Header from './components/Header';
 import Navigation from './components/Navigation';
@@ -13,11 +14,34 @@ function App() {
   return (
     <>
       <Navigation />
-      <div class="progress-wrap" id="scrollUp">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-      </div>
+      <Tooltip
+        title="Scroll to top"
+        arrow
+        sx={{
+          '& .MuiTooltip-tooltip': {
+            backgroundColor: '#333',
+            color: '#fff',
+            fontSize: '14px',
+            padding: '6px 12px',
+          },
+          '.MuiTooltip-arrow': {
+            color: '#333',
+          },
+        }}
+        placement="left"
+      >
+        <div className="progress-wrap" id="scrollUp">
+          <svg
+            className="progress-circle svg-content"
+            width="100%"
+            height="100%"
+            viewBox="-1 -1 102 102"
+          >
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+          </svg>
+        </div>
+      </Tooltip>
+
       <Header />
 
       <BrowserRouter>
